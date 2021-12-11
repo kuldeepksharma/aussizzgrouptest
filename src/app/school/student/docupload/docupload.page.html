@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Document Management</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <p-fileUpload name="demo[]" url="./docupload.page.ts" (onSelect)="onUpload($event)" multiple="multiple" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
+  text/plain, application/pdf, image/*" maxFileSize="1000000" [showUploadButton]="false" (onClear)="cancelUpload()"
+    (onRemove)="DeleteSingle($event)">
+    <ng-template pTemplate="content">
+      <b>{{uploadedFiles.length}}</b>
+    </ng-template>
+  </p-fileUpload>
+</ion-content>

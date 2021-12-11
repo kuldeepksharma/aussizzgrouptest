@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Text Operation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+ <div ><p (window:mouseup)="handleClick()">{{text}}</p>
+
+</div> 
+
+ 
+  <p-contextMenu (toggle) = "menuSelect($event)" [global]="true" [model]="items"></p-contextMenu>
+</ion-content>

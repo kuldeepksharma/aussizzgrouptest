@@ -1,0 +1,6 @@
+{
+  "appId": "com.Demo.ionicangular",
+  "appName": "Demo",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
